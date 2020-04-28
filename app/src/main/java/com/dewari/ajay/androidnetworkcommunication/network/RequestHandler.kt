@@ -18,8 +18,8 @@ object RequestHandler {
     const val GET : String = "GET"
     const val POST : String = "POST"
 
-    @Throws(Exception::class)
-    fun sendPost(r_url: String?, postDataParams: JSONObject): String? {
+    @Throws(IOException::class)
+    fun requestPOST(r_url: String?, postDataParams: JSONObject): String? {
         val url = URL(r_url)
         val conn: HttpURLConnection = url.openConnection() as HttpURLConnection
         conn.readTimeout = 3000
