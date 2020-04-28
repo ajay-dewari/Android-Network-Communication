@@ -18,23 +18,19 @@ class MainActivity : AppCompatActivity() {
 
         // Change the url with your own GET URL request
         val urlGET = "http://my-json-feed"
-
         //GET Request
         NetworkAsyncCall(this@MainActivity, urlGET, RequestHandler.GET).execute();
-
         // POST Request
 //        doPost()
-
-
     }
 
     private fun doPost() {
         // Change the url with your own POST URL request
         val urlPOST = "http://my-json-feed"
         val postDataParams = JSONObject()
-        postDataParams.put("name", "Ajay Singh Dewari")
-        postDataParams.put("email", "ajdewari@gmail.com")
-        postDataParams.put("phone", "+91 7829484225")
+        postDataParams.put("name", "Ajay")
+        postDataParams.put("email", "aj****ri@gmail.com")
+        postDataParams.put("phone", "+91 78******25")
         NetworkAsyncCall(this@MainActivity, urlPOST, RequestHandler.POST, postDataParams).execute()
     }
 
