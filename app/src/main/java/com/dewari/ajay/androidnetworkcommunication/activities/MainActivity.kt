@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         // Change the url with your own GET URL request
         val urlGET = "http://my-json-feed"
         //GET Request
@@ -34,8 +33,9 @@ class MainActivity : AppCompatActivity() {
         NetworkAsyncCall(this@MainActivity, urlPOST, RequestHandler.POST, postDataParams).execute()
     }
 
-    class NetworkAsyncCall(private val context: Context, private val url: String, private val requestType:
-    String, private val postJSONObject: JSONObject = JSONObject()
+    class NetworkAsyncCall(
+        private val context: Context, private val url: String, private val requestType:
+        String, private val postJSONObject: JSONObject = JSONObject()
     ) : AsyncTask<String?, String?, String?>() {
 
         override fun doInBackground(vararg p0: String?): String? {
