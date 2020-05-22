@@ -1,5 +1,5 @@
 # Android-Network-Communication
-This is a repository that contains Android Kotlin code snippets to to make network call in android using kotlin, without using any 3rd party library
+This is a repository that contains Android Kotlin code snippets to to make network calls, without using any 3rd party library
   
 ## Getting the sample code
 
