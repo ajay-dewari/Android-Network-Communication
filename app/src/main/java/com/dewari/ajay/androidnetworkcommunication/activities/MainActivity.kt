@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         // Change the url with your own GET URL request
-        val urlGET = "http://my-json-feed"
+        val urlGET = "https://jsonplaceholder.typicode.com/todos"
         //GET Request
         NetworkAsyncCall(this@MainActivity, urlGET, RequestHandler.GET).execute();
         // POST Request
